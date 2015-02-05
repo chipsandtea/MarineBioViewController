@@ -407,6 +407,7 @@
 				9D6540E01A817C5700F45F4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D6540E11A817C5700F45F4B /* Build configuration list for PBXNativeTarget "MarineBioViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +416,7 @@
 				9D6540E31A817C5700F45F4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
