@@ -7,17 +7,7 @@
 //
 
 import UIKit
-/*
-let bmeasurement_time = "bmeasurement_time"
-let bmeasurement_date = "bmeasurement_date"
-let bsurface_temperature = "bsurface_temperature"
-let bseawater_depth = "bseawater_depth"
-let bseawater_visibility = "bseawater_visibility"
-let bseawater_salinity = "bseawater_salinity"
-let bplankton_sample = "bplankton_sample"//number
-let bplankton_notes = "bplankton_notes"//actually species
-let bseawater_color = "bseawater_color"
-*/
+
 
 class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDelegate {
 
@@ -227,37 +217,36 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
         }
     }
     
-//    func gatherAllData2(){
-//        var cDictionary = [String : String]()
-//        
-//        cDictionary[bsurface_temperature] = TEMP.text
-//        cDictionary[bseawater_visibility] = VISIB.text
-//        cDictionary[bseawater_depth] = DEPTH.text
-//        cDictionary[bseawater_salinity] = SALIN.text
-//        cDictionary[bplankton_sample] = planktonSelection.text
-//        cDictionary[bplankton_notes] = PLANKSPEC.text
-//        cDictionary[bseawater_color] = colorSelection.text
-//        //cDictionary[] = .text
-//        //cDictionary[] = .text
-//        
-//        cDictionary["bmeasurement_time"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .NoStyle, timeStyle: .ShortStyle)
-//        
-//        cDictionary["bmeasurement_date"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .ShortStyle, timeStyle: .NoStyle)
-//
-//        
-//        var myNewDictArray: [[String:String]] = []
-//        myNewDictArray.append(cDictionary)
-//        sharedData().setObject(myNewDictArray, forKey: "biology")
-//        
-//        //sharedData().setObject(myNewDictArray, forKey: "biology")
-//        //sharedData().removeObjectForKey("biology")
-//        //sharedData().setObject(cDictionary, forKey: "biology")
-//        //println(sharedData())
-//    }
-//    
-//    @IBAction func nextButtonHit2(sender: UIButton) {
-//        
-//    }
+    func gatherAllData(){
+        var cDictionary = [String : String]()
+        
+        cDictionary["bsurface_temperature"] = TEMP.text
+        cDictionary["bseawater_visibility"] = VISIB.text
+        cDictionary["bseawater_depth"] = DEPTH.text
+        cDictionary["bseawater_salinity"] = SALIN.text
+        cDictionary["bplankton_sample"] = planktonSelection.text
+        cDictionary["bplankton_notes"] = PLANKSPEC.text
+        cDictionary["bseawater_color"] = colorSelection.text
+        //cDictionary[] = .text
+        //cDictionary[] = .text
+        
+        cDictionary["bmeasurement_time"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .NoStyle, timeStyle: .ShortStyle)
+        
+        cDictionary["bmeasurement_date"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .ShortStyle, timeStyle: .NoStyle)
+        
+        
+        var myNewDictArray: [[String:String]] = []
+        myNewDictArray.append(cDictionary)
+        sharedData().setObject(myNewDictArray, forKey: "biology")
+        
+        
+    }
+
+    @IBAction func saveData(sender: AnyObject) {
+        gatherAllData()
+        println(sharedData())
+    }
+
 /*
     // MARK: - Navigation
 
