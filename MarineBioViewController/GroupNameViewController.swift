@@ -1,5 +1,5 @@
 //
-//  CompletedViewController.swift
+//  GroupNameViewController.swift
 //  MarineBioViewController
 //
 //  Created by Christopher Hsiao on 2/10/15.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class CompletedViewController: UIViewController {
+class GroupNameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.setNavigationBarHidden(true, animated: true)
 
         // Do any additional setup after loading the view.
     }
@@ -22,15 +21,8 @@ class CompletedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func hitGroupSelection(sender: AnyObject) {
-        navigationController?.setNavigationBarHidden(false, animated: true)
-    }
-    
-    @IBAction func hitSchoolSelection(sender: AnyObject) {
-        navigationController?.setNavigationBarHidden(false, animated: true)
-    }
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -38,6 +30,6 @@ class CompletedViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-
+    */
 
 }
