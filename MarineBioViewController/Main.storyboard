@@ -203,9 +203,6 @@
                     <navigationItem key="navigationItem" title="Sign In" id="W33-8t-ZVI"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="firstContinueButton" destination="aTx-33-hb4" id="Cyd-gO-Hac"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cp-tc-BOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -623,7 +620,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="8Tl-ar-IFa"/>
+        <segue reference="64y-wF-jS9"/>
         <segue reference="rP0-NE-9Ji"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
