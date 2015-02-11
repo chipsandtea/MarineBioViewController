@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A742BB71A8830EA001EF898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A742BB61A8830EA001EF898 /* Main.storyboard */; };
+		4A742BBC1A8831D7001EF898 /* dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A742BBB1A8831D7001EF898 /* dictionary.m */; };
 		9D6540C51A817C5700F45F4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6540C41A817C5700F45F4B /* AppDelegate.swift */; };
 		9D6540CC1A817C5700F45F4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6540CB1A817C5700F45F4B /* Images.xcassets */; };
 		9D6540CF1A817C5700F45F4B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D6540CD1A817C5700F45F4B /* LaunchScreen.xib */; };
 		9D6540DB1A817C5700F45F4B /* MarineBioViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6540DA1A817C5700F45F4B /* MarineBioViewControllerTests.swift */; };
-		9D6540E51A817C7D00F45F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6540E41A817C7D00F45F4B /* Main.storyboard */; };
 		9D6540E71A817CEF00F45F4B /* MarineBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6540E61A817CEF00F45F4B /* MarineBioViewController.swift */; };
 		9D6540E91A817D3200F45F4B /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6540E81A817D3200F45F4B /* ResponsiveTextFieldViewController.swift */; };
 		9D6540EB1A817F2500F45F4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6540EA1A817F2500F45F4B /* ViewController.swift */; };
@@ -28,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A742BB61A8830EA001EF898 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4A742BB91A8831B7001EF898 /* dictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dictionary.h; sourceTree = "<group>"; };
+		4A742BBA1A8831D7001EF898 /* MarineBioViewController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarineBioViewController-Bridging-Header.h"; sourceTree = "<group>"; };
+		4A742BBB1A8831D7001EF898 /* dictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dictionary.m; sourceTree = "<group>"; };
 		9D6540BF1A817C5700F45F4B /* MarineBioViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarineBioViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6540C31A817C5700F45F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D6540C41A817C5700F45F4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +41,6 @@
 		9D6540D41A817C5700F45F4B /* MarineBioViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarineBioViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6540D91A817C5700F45F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D6540DA1A817C5700F45F4B /* MarineBioViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarineBioViewControllerTests.swift; sourceTree = "<group>"; };
-		9D6540E41A817C7D00F45F4B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = /Users/Christopher/Documents/XCode/MarineBioViewController/MarineBioViewController/Main.storyboard; sourceTree = "<absolute>"; };
 		9D6540E61A817CEF00F45F4B /* MarineBioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarineBioViewController.swift; sourceTree = "<group>"; };
 		9D6540E81A817D3200F45F4B /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
 		9D6540EA1A817F2500F45F4B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,13 +86,16 @@
 			isa = PBXGroup;
 			children = (
 				9D6540EA1A817F2500F45F4B /* ViewController.swift */,
+				4A742BBB1A8831D7001EF898 /* dictionary.m */,
 				9D6540E61A817CEF00F45F4B /* MarineBioViewController.swift */,
 				9D6540E81A817D3200F45F4B /* ResponsiveTextFieldViewController.swift */,
 				9D6540C41A817C5700F45F4B /* AppDelegate.swift */,
 				9D6540CB1A817C5700F45F4B /* Images.xcassets */,
-				9D6540E41A817C7D00F45F4B /* Main.storyboard */,
+				4A742BB61A8830EA001EF898 /* Main.storyboard */,
 				9D6540CD1A817C5700F45F4B /* LaunchScreen.xib */,
 				9D6540C21A817C5700F45F4B /* Supporting Files */,
+				4A742BB91A8831B7001EF898 /* dictionary.h */,
+				4A742BBA1A8831D7001EF898 /* MarineBioViewController-Bridging-Header.h */,
 			);
 			path = MarineBioViewController;
 			sourceTree = "<group>";
@@ -200,7 +207,7 @@
 			files = (
 				9D6540CF1A817C5700F45F4B /* LaunchScreen.xib in Resources */,
 				9D6540CC1A817C5700F45F4B /* Images.xcassets in Resources */,
-				9D6540E51A817C7D00F45F4B /* Main.storyboard in Resources */,
+				4A742BB71A8830EA001EF898 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A742BBC1A8831D7001EF898 /* dictionary.m in Sources */,
 				9D6540E91A817D3200F45F4B /* ResponsiveTextFieldViewController.swift in Sources */,
 				9D6540E71A817CEF00F45F4B /* MarineBioViewController.swift in Sources */,
 				9D6540EB1A817F2500F45F4B /* ViewController.swift in Sources */,
@@ -338,9 +346,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MarineBioViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = MarineBioViewController;
+				SWIFT_OBJC_BRIDGING_HEADER = "MarineBioViewController/MarineBioViewController-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -348,9 +359,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MarineBioViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = MarineBioViewController;
+				SWIFT_OBJC_BRIDGING_HEADER = "MarineBioViewController/MarineBioViewController-Bridging-Header.h";
 			};
 			name = Release;
 		};
