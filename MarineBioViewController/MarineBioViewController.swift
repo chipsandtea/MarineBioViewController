@@ -47,6 +47,8 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
     @IBOutlet var WCButton: UIButton!
     @IBOutlet var PSNButton: UIButton!
     @IBOutlet var PSButton: UIButton!
+    @IBOutlet var Done: UIButton!
+    
     
     // COLORS
     @IBAction func brownChosen(sender: UIButton) {
@@ -89,6 +91,7 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
         hidePSN(true)
         hideWaterCol(true)
         hidePS(true)
+        Done.hidden = true
         // Do any additional setup after loading
 		
 		WPButton.backgroundColor = UIColor.lightGrayColor()
@@ -103,6 +106,10 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
         hidePSN(true)
         hidePS(true)
         hideWaterQ(false)
+        
+        if(!Done.hidden){
+            Done.hidden = true
+        }
 
 		WPButton.backgroundColor = UIColor.lightGrayColor()
 		WCButton.backgroundColor = UIColor.clearColor()
@@ -115,6 +122,10 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
 		hidePS(true)
 		hideWaterQ(true)
 		hideWaterCol(false)
+        
+        if(!Done.hidden){
+            Done.hidden = true
+        }
 		
 		WPButton.backgroundColor = UIColor.clearColor()
 		WCButton.backgroundColor = UIColor.lightGrayColor()
@@ -127,6 +138,10 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
 		hidePS(true)
 		hideWaterQ(true)
 		hidePSN(false)
+        
+        if(!Done.hidden){
+            Done.hidden = true
+        }
 		
 		WPButton.backgroundColor = UIColor.clearColor()
 		WCButton.backgroundColor = UIColor.clearColor()
@@ -139,7 +154,7 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
 		hidePSN(true)
 		hideWaterQ(true)
 		hidePS(false)
-		
+		Done.hidden = false
 		WPButton.backgroundColor = UIColor.clearColor()
 		WCButton.backgroundColor = UIColor.clearColor()
 		PSNButton.backgroundColor = UIColor.clearColor()

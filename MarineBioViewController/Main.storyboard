@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="dfG-aa-5H5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="dfG-aa-5H5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -120,10 +120,10 @@
             <objects>
                 <viewController id="jbO-7M-Qap" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FvC-Or-9ss">
-                        <rect key="frame" x="0.0" y="64" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="44" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit Data for &lt;GroupName>?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2II-2s-2mA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit Data for &lt;GroupName&gt;?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2II-2s-2mA">
                                 <rect key="frame" x="299" y="121" width="379" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -279,9 +279,13 @@
             <objects>
                 <viewController id="bVk-uh-qgy" customClass="MarineBioViewController" customModule="MarineBioViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Na5-JW-0sA">
-                        <rect key="frame" x="0.0" y="64" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="44" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plankton_bg" id="eHs-cu-oXF">
+                                <rect key="frame" x="0.0" y="0.0" width="1373" height="698"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UH1-dS-gzV">
                                 <rect key="frame" x="544" y="439" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -550,10 +554,6 @@
                                     <action selector="saveData:" destination="bVk-uh-qgy" eventType="touchUpInside" id="IHq-ZO-h3t"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plankton_bg" id="eHs-cu-oXF">
-                                <rect key="frame" x="0.0" y="0.0" width="1373" height="698"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -563,7 +563,7 @@
                                 <rect key="frame" x="474" y="649" width="77" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="Done">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -572,6 +572,7 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
@@ -581,6 +582,7 @@
                         <outlet property="BROWN" destination="qp1-Td-u7x" id="TNC-9s-JwN"/>
                         <outlet property="DEPTH" destination="sAx-yy-Qkd" id="oII-yt-3eP"/>
                         <outlet property="DepthLabel" destination="vsB-fx-MKI" id="lKu-u3-Uq8"/>
+                        <outlet property="Done" destination="0Yh-lW-MfU" id="nGL-Kp-PiF"/>
                         <outlet property="GREEN" destination="iX9-BQ-gRH" id="eaN-jv-Mzf"/>
                         <outlet property="MPP" destination="tep-ws-VWI" id="XaR-rv-1MZ"/>
                         <outlet property="MZP" destination="6ec-UP-BgD" id="r8U-dK-zHf"/>
@@ -602,7 +604,6 @@
                         <outlet property="YELLGREEN" destination="qqX-LN-ef0" id="0js-Lm-x7o"/>
                         <outlet property="colorSelection" destination="oMx-gS-1Pd" id="Ozd-bx-IVI"/>
                         <outlet property="planktonSelection" destination="dgs-Mj-BkM" id="gkn-Fd-faZ"/>
-                        <segue destination="jbO-7M-Qap" kind="push" id="Hug-mT-7dl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ge7-Kw-DD8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -621,7 +622,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="8Tl-ar-IFa"/>
-        <segue reference="jSo-Ss-lqo"/>
         <segue reference="rP0-NE-9Ji"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
