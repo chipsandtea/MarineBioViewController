@@ -89,6 +89,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="hitGroupSelection:" destination="wGk-YH-7RE" eventType="touchUpInside" id="U2y-Md-HG6"/>
                                     <segue destination="BYZ-38-t0r" kind="push" id="8Tl-ar-IFa"/>
                                 </connections>
                             </button>
@@ -100,6 +101,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="hitSchoolSelection:" destination="wGk-YH-7RE" eventType="touchUpInside" id="lqh-Ht-qC7"/>
                                     <segue destination="dvb-r1-wRf" kind="push" id="rP0-NE-9Ji"/>
                                 </connections>
                             </button>
