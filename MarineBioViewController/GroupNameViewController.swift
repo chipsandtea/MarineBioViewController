@@ -22,6 +22,8 @@ class GroupNameViewController: UIViewController {
     }
     
 
+    @IBOutlet var group_name: UIPickerView!//this is for the group name input.
+    //will add to dicts as soon as it is clear where it needs to go.
     /*
     // MARK: - Navigation
 

@@ -254,12 +254,13 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
         myNewDictArray.append(cDictionary)
         sharedData().setObject(myNewDictArray, forKey: "biology")
         
-        
+        bData().setObject(sharedData(), forKey: "group_data")
+        cData().setObject(bData(), forKey: "data")
     }
 
     @IBAction func saveData(sender: AnyObject) {
         gatherAllData()
-        println(sharedData())
+        println(cData())
     }
 
 /*
