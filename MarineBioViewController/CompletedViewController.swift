@@ -21,14 +21,6 @@ class CompletedViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func hitGroupSelection(sender: AnyObject) {
-        navigationController?.setNavigationBarHidden(false, animated: true)
-    }
-    
-    @IBAction func hitSchoolSelection(sender: AnyObject) {
-        navigationController?.setNavigationBarHidden(false, animated: true)
-    }
 
     
     // MARK: - Navigation
