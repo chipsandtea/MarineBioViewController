@@ -10,6 +10,11 @@ import UIKit
 
 
 class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDelegate {
+    
+    
+    @IBOutlet var schoolGroupLabel: UILabel!
+    var GroupName = String()
+    var SchoolName = String()
 
     //water
     @IBOutlet var TEMP: UITextField!
@@ -84,6 +89,7 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        schoolGroupLabel.text = "School: " + SchoolName + "  Group: " + GroupName
         WPButton.layer.borderWidth = 1
         WCButton.layer.borderWidth = 1
         PSNButton.layer.borderWidth = 1
@@ -233,44 +239,47 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
     }
     
     func gatherAllData(){
+        var aDictionary = [String : String]()
+        var bDictionary = [String : String]()
         var cDictionary = [String : String]()
+        var dDictionary = [String : String]()
+
+        aDictionary["bsurface_temperature"] = TEMP.text
+        aDictionary["bseawater_visibility"] = VISIB.text
+        aDictionary["bseawater_depth"] = DEPTH.text
+        aDictionary["bseawater_salinity"] = SALIN.text
+        aDictionary["bplankton_sample"] = planktonSelection.text
+        aDictionary["bplankton_notes"] = PLANKSPEC.text
+        aDictionary["bseawater_color"] = colorSelection.text
+      
         
-        cDictionary["bsurface_temperature"] = TEMP.text
-        cDictionary["bseawater_visibility"] = VISIB.text
-        cDictionary["bseawater_depth"] = DEPTH.text
-        cDictionary["bseawater_salinity"] = SALIN.text
-        cDictionary["bplankton_sample"] = planktonSelection.text
-        cDictionary["bplankton_notes"] = PLANKSPEC.text
-        cDictionary["bseawater_color"] = colorSelection.text
-        //cDictionary[] = .text
-        //cDictionary[] = .text
+        aDictionary["bmeasurement_time"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .NoStyle, timeStyle: .ShortStyle)
         
-        cDictionary["bmeasurement_time"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .NoStyle, timeStyle: .ShortStyle)
+        aDictionary["bmeasurement_date"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .ShortStyle, timeStyle: .NoStyle)
         
-        cDictionary["bmeasurement_date"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .ShortStyle, timeStyle: .NoStyle)
+        bDictionary["type"] = "biology"
+        cDictionary["group"] = GroupName
+        dDictionary["id"] = "some id"
+        sharedData().setObject(aDictionary, forKey: "data")
+        sharedData().addEntriesFromDictionary(bDictionary)
+        sharedData().addEntriesFromDictionary(cDictionary)
+        sharedData().addEntriesFromDictionary(dDictionary)
+        //var myNewDictArray: [[String:String]] = []
+        //myNewDictArray.append(aDictionary)
+        //sharedData().setObject(myNewDictArray, forKey: "biology")
         
-        
-        var myNewDictArray: [[String:String]] = []
-        myNewDictArray.append(cDictionary)
-        sharedData().setObject(myNewDictArray, forKey: "biology")
-        
-        bData().setObject(sharedData(), forKey: "group_data")
-        cData().setObject(bData(), forKey: "data")
+        //bData().setObject(sharedData(), forKey: "group_data")
+        //cData().setObject(bData(), forKey: "data")
     }
 
     @IBAction func saveData(sender: AnyObject) {
         gatherAllData()
-        println(cData())
+        println(sharedData())
     }
 
-/*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        var DestVC: SubmitDataViewController = segue.destinationViewController as SubmitDataViewController
+        DestVC.groupName = GroupName
     }
-*/
 
 }
