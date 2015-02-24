@@ -10,6 +10,11 @@ import UIKit
 
 
 class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDelegate {
+    
+    
+    @IBOutlet var schoolGroupLabel: UILabel!
+    var GroupName = String()
+    var SchoolName = String()
 
     //water
     @IBOutlet var TEMP: UITextField!
@@ -84,6 +89,7 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        schoolGroupLabel.text = "School: " + SchoolName + "  Group: " + GroupName
         WPButton.layer.borderWidth = 1
         WCButton.layer.borderWidth = 1
         PSNButton.layer.borderWidth = 1
@@ -263,14 +269,9 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
         println(cData())
     }
 
-/*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        var DestVC: SubmitDataViewController = segue.destinationViewController as SubmitDataViewController
+        DestVC.groupName = GroupName
     }
-*/
 
 }
