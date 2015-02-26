@@ -138,6 +138,10 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
 		PSNButton.backgroundColor = UIColor.clearColor()
 		PSButton.backgroundColor = UIColor.clearColor()
 	}
+   @IBOutlet weak var saveDataDict: UIButton!
+   @IBAction func saveDataDict(sender: AnyObject) {
+      self.gatherAllData()
+   }
 	
 	@IBAction func PSNPressed(sender: UIButton) {
 		hideWaterCol(true)
@@ -259,7 +263,7 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
         
         bDictionary["type"] = "biology"
         cDictionary["group"] = GroupName
-        dDictionary["id"] = "some id"
+        dDictionary["id"] = (sharedData().objectForKey("school_id") as String)
         sharedData().setObject(aDictionary, forKey: "data")
         sharedData().addEntriesFromDictionary(bDictionary)
         sharedData().addEntriesFromDictionary(cDictionary)

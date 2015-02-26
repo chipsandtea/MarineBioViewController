@@ -20,6 +20,7 @@
 		9D6540E91A817D3200F45F4B /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6540E81A817D3200F45F4B /* ResponsiveTextFieldViewController.swift */; };
 		9D6540EB1A817F2500F45F4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6540EA1A817F2500F45F4B /* ViewController.swift */; };
 		9D798C281A8AE1F7008C8AA0 /* CompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D798C271A8AE1F7008C8AA0 /* CompletedViewController.swift */; };
+		B8413B8E1A9FDE70008F5DE7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8413B8D1A9FDE70008F5DE7 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		9D6540E81A817D3200F45F4B /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
 		9D6540EA1A817F2500F45F4B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D798C271A8AE1F7008C8AA0 /* CompletedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedViewController.swift; sourceTree = "<group>"; };
+		B8413B8D1A9FDE70008F5DE7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		9D6540C11A817C5700F45F4B /* MarineBioViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B8413B8D1A9FDE70008F5DE7 /* SwiftyJSON.swift */,
 				9D6540EA1A817F2500F45F4B /* ViewController.swift */,
 				4A742BBB1A8831D7001EF898 /* dictionary.m */,
 				9D6540E61A817CEF00F45F4B /* MarineBioViewController.swift */,
@@ -240,6 +243,7 @@
 				9D0AD2C31A8AF1AF00660F48 /* SchoolSelectionViewController.swift in Sources */,
 				9D798C281A8AE1F7008C8AA0 /* CompletedViewController.swift in Sources */,
 				4A742BBC1A8831D7001EF898 /* dictionary.m in Sources */,
+				B8413B8E1A9FDE70008F5DE7 /* SwiftyJSON.swift in Sources */,
 				9D0AD2C71A8AF26000660F48 /* SubmitDataViewController.swift in Sources */,
 				9D6540E91A817D3200F45F4B /* ResponsiveTextFieldViewController.swift in Sources */,
 				9D6540E71A817CEF00F45F4B /* MarineBioViewController.swift in Sources */,
