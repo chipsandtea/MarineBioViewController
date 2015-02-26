@@ -27,7 +27,17 @@ class CompletedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
+   @IBAction func hitGroupSelect(sender: AnyObject) {
+      self.navigationController!.popToViewController(self.navigationController!.viewControllers[2] as UIViewController, animated: true)
+
+   }
+   
+   @IBAction func hitSchoolSelect(sender: AnyObject) {
+      self.navigationController!.popToViewController(self.navigationController!.viewControllers[1] as UIViewController, animated: true)
+
+   }
+   
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
