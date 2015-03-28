@@ -89,7 +89,7 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        schoolGroupLabel.text = "School: " + SchoolName + "  Group: " + GroupName
+        schoolGroupLabel.text = "School: " + SchoolName + " || Group: " + GroupName
         WPButton.layer.borderWidth = 1
         WCButton.layer.borderWidth = 1
         PSNButton.layer.borderWidth = 1
@@ -98,6 +98,12 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
         hideWaterCol(true)
         hidePS(true)
         Done.hidden = true
+        
+        TEMP.keyboardType = UIKeyboardType.NumberPad
+        VISIB.keyboardType = UIKeyboardType.NumberPad
+        DEPTH.keyboardType = UIKeyboardType.NumberPad
+        SALIN.keyboardType = UIKeyboardType.NumberPad
+        
         // Do any additional setup after loading
 		
 		WPButton.backgroundColor = UIColor.lightGrayColor()
