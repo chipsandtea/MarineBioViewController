@@ -58,21 +58,27 @@ class MarineBioViewController: ResponsiveTextFieldViewController, UIPickerViewDe
     // COLORS
     @IBAction func brownChosen(sender: UIButton) {
         colorSelection.text = "brown"
+        colorSelection.textColor = UIColor.brownColor()
     }
     @IBAction func blueChosen(sender: UIButton) {
         colorSelection.text = "blue"
+        colorSelection.textColor = UIColor.blueColor()
     }
     @IBAction func redChosen(sender: UIButton) {
         colorSelection.text = "red"
+        colorSelection.textColor = UIColor.redColor()
     }
     @IBAction func greenChosen(sender: UIButton) {
         colorSelection.text = "green"
+        colorSelection.textColor = UIColor.greenColor()
     }
     @IBAction func yelGreenChosen(sender: UIButton) {
         colorSelection.text = "yellow-green"
+        colorSelection.textColor = YELLGREEN.titleColorForState(UIControlState.Normal)
     }
     @IBAction func blueGreenChosen(sender: UIButton) {
         colorSelection.text = "blue-green"
+        colorSelection.textColor = BLUGREEN.titleColorForState(UIControlState.Normal)
     }
 
     @IBAction func MZPChosen(sender: UIButton) {
