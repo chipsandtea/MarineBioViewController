@@ -62,22 +62,29 @@ class GroupNameViewController: ResponsiveTextFieldViewController,UIPickerViewDel
         let size = countElements(str)
         let arraySize = groupNames.count
         var matches = [String]()
-        if(size == 0){
+        groupNames = backupDictionary
+        if(size == 0 || groupNames[0] == "No Group Names Found!"){
             groupNames = backupDictionary
         }else{
             for name in groupNames {
                 //print(name.lowercaseString.substringWithRange(Range<String.Index>(start: str.startIndex, end: str.endIndex)))
-                if(str == name.lowercaseString.substringWithRange(Range<String.Index>(start: str.startIndex, end: str.endIndex))){
-                    matches.append(name)
-                    //print(str + " _ " + name)
+                if(countElements(str) <= countElements(name)){
+                    if(str == name.lowercaseString.substringWithRange(Range<String.Index>(start: str.startIndex, end: str.endIndex))){
+                        matches.append(name)
+                        //print(str + " _ " + name)
+                    }
                 }
-                self.groupNames = matches
             }
+            if(matches.count == 0){
+                matches.append("No Group Names Found!")
+            }
+            self.groupNames = matches
         }
         
         print(matches)
         self.groupPicker.reloadAllComponents()
-
+        selectedGroup = groupNames[0]
+        
     }
     
     override func viewWillAppear(animated: Bool) {
